@@ -1,0 +1,102 @@
+/*=====Globales======*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    font-family: 'Montserrat' sans-serif;
+    overflow-x: hidden;
+}
+/*=============== Menu =========*/
+
+#menu a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#menu button{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*=============== Carrusel =========*/
+
+#carousel-inner {
+    max-height: 39rem !important;
+}
+
+/*=============== Pie de pagina =========*/
+
+footer{
+    width: 100% !important;
+    padding: 50px 0px;
+    *background-image: url(../img/background-footer.svg);
+    *background-size: cover;
+    background-color: #7D152E;
+    mask-image: url("../img/background-footer.svg");
+}
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+.box_footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.box_footer .logo img{
+    width: 180px;
+}
+.box_copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+.box_copyright p{
+    margin-top: 20px;
+    color: #ffffff;
+}
+.box_copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+
+/*=============== MEDIDA DE PANTALLA SM =========*/
+
+@media (max-width:768px){
+    #intro, #equipo {
+        width: 90% !important;
+    }
+    .servicio-fila {
+        width: 100% !important;
+        text-align: center;
+    }
+    #bg-contacto {
+        top: 110px;
+    }
+    footer{
+        flex-wrap: wrap;
+        width: 100% !important;
+    }
+}
+
+
+/*=============== MEDIA QUERIES DE EXTRA PANTALLA SM =========*/
+
+@media(max-width: 535px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    footer{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
